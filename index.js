@@ -32,6 +32,10 @@ let records = [
 ];
 
 let table = document.getElementById("tbody");
+let mostRecentSort = {
+  columnNum: -1,
+  isReversed: false
+}
 render();
 function addRow() {
   let table = document.getElementById("tbody");
@@ -172,5 +176,13 @@ function sort(colNum, isNumeric) {
     const valueB = getValue(rowB);
     return valueA > valueB ? 1 : valueA < valueB ? -1 : 0;
   });
+  if (colNum === mostRecentSort.columnNum && !mostRecentSort.isReversed) {
+    mostRecentSort.isReversed = true;
+    table.replaceChildren(...orderedRows.reverse());
+  } else {
+    mostRecentSort.columnNum = colNum;
+    mostRecentSort.isReversed = false;
+    table.replaceChildren(...orderedRows);
+  }
   table.replaceChildren(...orderedRows);
 }
