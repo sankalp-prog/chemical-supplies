@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+    <div class="header">
+      <h2>Chemical Supplies</h2>
+      <div class="icons">
+        <img src="./icons/plus-circle.svg" class="add-btn" onclick="addRow()"/>
+        <img src="./icons/arrow-up.svg" class="arrow-up-btn" onclick="moveUp()"/>
+        <img src="./icons/arrow-down.svg" class="arrow-down-btn" onclick="moveDown()"/>
+        <img src="./icons/trash.svg" class="delete-btn" onclick="deleteRow()"/>
+        <img src="./icons/rotate-ccw.svg" class="refresh-btn" onclick="refresh()"/>
+        <img src="./icons/save.svg" class="save-btn" onclick="save()"/>
+      </div>
+    </div>
+    
+    <table>
+      <thead>
+        <tr>
+          <th><input type="checkbox" id="selectAll"></th>
+          <th onclick="sort(1, false)">Chemical Name</th>
+          <th onclick="sort(2, false)">Vendor</th>
+          <th onclick="sort(3, true)">Density (g/m<sup>3</sup>)</th>
+          <th onclick="sort(4, true)">Viscosity(m<sup>2</sup>/s)</th>
+          <th onclick="sort(5, false)">Packaging</th>
+          <th onclick="sort(6, true)">Pack Size</th>
+          <th onclick="sort(7, false)">Unit</th>
+          <th onclick="sort(8, true)">Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        
+      </tbody>
+    </table>
+    <script src="index.js"></script>
+  </body>
+</html>

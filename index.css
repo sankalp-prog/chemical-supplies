@@ -1,0 +1,24 @@
+body {
+    font-family: 'Verdana', monospace;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
