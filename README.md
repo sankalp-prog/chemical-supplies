@@ -1,5 +1,7 @@
 # Chemical Supplies
-IIT Bombay coding interview challenge
+[IIT Bombay coding interview challenge]
+
+### [Demo](https://sankalp-prog.github.io/chemical-supplies/)
 
 ## Documentation 
 ### Features Implemented:
