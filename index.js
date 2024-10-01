@@ -34,8 +34,8 @@ let records = [
 let table = document.getElementById("tbody");
 let mostRecentSort = {
   columnNum: -1,
-  isReversed: false
-}
+  isReversed: false,
+};
 render();
 function addRow() {
   let table = document.getElementById("tbody");

@@ -1,4 +1,4 @@
-# chemical-supplies
+# Chemical Supplies
 IIT Bombay coding interview challenge
 
 ## Documentation 
@@ -8,7 +8,7 @@ IIT Bombay coding interview challenge
 - Add new records.
 - Delete Selected Records.
 - Save all the changes done to the records.
-- Refreshes the table to it's last saved state.
+- Refreshes the table to its last saved state.
 - Sort the records in ascending/descending order(toggle) by clicking on any of the column headings.
 
 ## Product Screenshot
